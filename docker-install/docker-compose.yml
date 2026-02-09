@@ -1,0 +1,45 @@
+x-service:
+  &service
+  restart: "always"
+  logging:
+    driver: "json-file"
+    options:
+      max-size: "50m"
+      max-file: "5"
+
+x-python-service:
+  &python-service
+  <<: *service
+  stdin_open: true
+  tty: true
+
+services:
+  ui-react-project:
+    <<: *service
+    container_name: ui-react-project-local
+    build:
+      context: ../ui-react-project
+      dockerfile: Dockerfile.dev
+    image: ui-react-project:local
+    volumes:
+      - ../ui-react-project:/app
+      - /app/node_modules
+    ports:
+      - 3000:3000
+    environment:
+      env_file: ../ui-react-project/public/config.js
+      NODE_ENV: development
+
+
+  python-project:
+    <<: *python-service
+    container_name: python-project-local
+    build:
+      context: ../python-project
+      dockerfile: Dockerfile
+    command: uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+    image: python-project:local
+    ports:
+      - "8000:8000"
+    volumes:
+      - ../python-project/src:/app

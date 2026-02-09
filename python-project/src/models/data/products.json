@@ -1,0 +1,25 @@
+[
+  {
+    "id": "MLC123",
+    "name": "Vinilo Pearl Jam Ten Sellado",
+    "price": 42800,
+    "installments": "6 cuotas de $7.133 sin interés",
+    "albumType": "Vinilo",
+    "images": [
+      "https://http2.mlstatic.com/D_NQ_NP_831473-MLA99954413791_112025-O.webp",
+      "https://http2.mlstatic.com/D_NQ_NP_610890-MLA99954621685_112025-O.webp",
+      "https://http2.mlstatic.com/D_NQ_NP_851072-MLA99470530820_112025-O.webp",
+      "https://http2.mlstatic.com/D_NQ_NP_903321-MLA99470540836_112025-O.webp"
+    ],
+    "description": [
+      "Tipo de envase: Caja de plástico.",
+      "Incluye pistas adicionales: No.",
+      "Versión del álbum: Estándar.",
+      "Vinilo Pearl Jam Ten Sellado, un álbum icónico del género Rock con 11 canciones, originario de Estados Unidos."
+    ],
+    "seller": {
+      "name": "DISCORODANTE",
+      "sales": "+100 ventas"
+    }
+  }
+]
