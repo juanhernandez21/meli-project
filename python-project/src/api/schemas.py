@@ -2,6 +2,8 @@
 from enum import Enum
 from pydantic import BaseModel
 from models.products import products
+from models.sellers import sellers
+from models.offers import offers
 
 class HealthStatusEnum(str, Enum):
   """A health status."""
@@ -20,17 +22,9 @@ class HealthSchema(BaseModel):
 
 class ProductSchema(products):
 	"""The product model"""
+	
+class SellerSchema(sellers):
+	"""The seller model"""
 
-
-class ProductChangedSchema(BaseModel):
-	"""Response when a product was changed."""
-
-	result: str = "Product saved successfully"
-	product: ProductSchema
-
-class ProductUnchangedSchema(BaseModel):
-	"""Response when a product was not changed."""
-
-	result: str = "Product alredy existed, it was not changed"
-	product: ProductSchema
-
+class OfferSchema(offers):
+  """The offer model"""

@@ -1,25 +1,88 @@
 [
-  {
-    "id": "MLC123",
-    "name": "Vinilo Pearl Jam Ten Sellado",
-    "price": 42800,
-    "installments": "6 cuotas de $7.133 sin interés",
-    "albumType": "Vinilo",
-    "images": [
-      "https://http2.mlstatic.com/D_NQ_NP_831473-MLA99954413791_112025-O.webp",
-      "https://http2.mlstatic.com/D_NQ_NP_610890-MLA99954621685_112025-O.webp",
-      "https://http2.mlstatic.com/D_NQ_NP_851072-MLA99470530820_112025-O.webp",
-      "https://http2.mlstatic.com/D_NQ_NP_903321-MLA99470540836_112025-O.webp"
-    ],
-    "description": [
-      "Tipo de envase: Caja de plástico.",
-      "Incluye pistas adicionales: No.",
-      "Versión del álbum: Estándar.",
-      "Vinilo Pearl Jam Ten Sellado, un álbum icónico del género Rock con 11 canciones, originario de Estados Unidos."
-    ],
-    "seller": {
-      "name": "DISCORODANTE",
-      "sales": "+100 ventas"
+    {
+        "status": "active",
+        "product": {
+            "id": "MLC123",
+            "name": "Vinilo Pearl Jam Ten Sellado",
+            "productType": "Vinilo",
+            "condition": "Nuevo",
+            "rating": "5.0",
+            "reviewsCount": 70,
+            "images": [
+                "https://http2.mlstatic.com/D_NQ_NP_831473-MLA99954413791_112025-O.webp",
+                "https://http2.mlstatic.com/D_NQ_NP_610890-MLA99954621685_112025-O.webp",
+                "https://http2.mlstatic.com/D_NQ_NP_851072-MLA99470530820_112025-O.webp",
+                "https://http2.mlstatic.com/D_NQ_NP_903321-MLA99470540836_112025-O.webp",
+                "https://http2.mlstatic.com/D_NQ_NP_964059-MLA99954572201_112025-O.webp",
+                "https://http2.mlstatic.com/D_NQ_NP_635437-MLA99954572203_112025-O.webp"
+            ],
+            "highlightedFeatures": [
+                "Tipo de envase: Caja de plástico.",
+                "Incluye pistas adicionales: No.",
+                "Versión del álbum: Estándar.",
+                "Vinilo Pearl Jam Ten Sellado, un álbum icónico del género Rock con 11 canciones, originario de Estados Unidos."
+            ],
+            "mainFeatures": [
+                {
+                    "label": "Nombre del artista del album",
+                    "value": "Pearl Jam"
+                },
+                {
+                    "label": "Nombre del álbum",
+                    "value": "Ten"
+                },
+                {
+                    "label": "Compañía productora",
+                    "value": "Sony Music"
+                },
+                {
+                    "label": "Formato",
+                    "value": "Físico"
+                },
+                {
+                    "label": "Tipo de álbum",
+                    "value": "Vinilo"
+                },
+                {
+                    "label": "Versión del álbum",
+                    "value": "Estándar"
+                },
+                {
+                    "label": "Incluye pistas adicionales",
+                    "value": "No"
+                },
+                {
+                    "label": "Tipo de envase",
+                    "value": "Caja de plástico"
+                }
+            ],
+            "otherFeatures": [
+                {
+                    "label": "Duración total del álbum",
+                    "value": "1 h"
+                },
+                {
+                    "label": "Cantidad de canciones",
+                    "value": "11"
+                },
+                {
+                    "label": "Origen",
+                    "value": "Estados Unidos"
+                },
+                {
+                    "label": "Género",
+                    "value": "Rock"
+                },
+                {
+                    "label": "Cantidad de piezas",
+                    "value": "1"
+                },
+                {
+                    "label": "Accesorios incluidos",
+                    "value": "No"
+                }
+            ],
+            "description" : "Descubre el icónico álbum Ten de Pearl Jam, ahora disponible en un vinilo doble completamente nuevo y sellado. Este álbum, lanzado por Sony Music, es una joya del género rock que ha dejado una huella imborrable en la historia de la música. Con un total de 11 canciones y una duración total de 60 minutos, Ten ofrece una experiencia auditiva envolvente que captura la esencia de la banda. Este producto, originario de Estados Unidos, no incluye pistas adicionales ni accesorios, pero su calidad y autenticidad son inigualables. Perfecto para coleccionistas y amantes de la música, este vinilo es una adición esencial a cualquier colección. No pierdas la oportunidad de tener en tus manos este clásico atemporal de Pearl Jam."
+        }
     }
-  }
 ]

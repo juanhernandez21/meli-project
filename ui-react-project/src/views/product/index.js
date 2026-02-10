@@ -1,12 +1,14 @@
 import React, { useEffect } from "react";
-import { getProduct } from "./../../utils";
+import { getProduct, getOffer } from "./../../utils";
 import MainLayout from "./../../components/layout/MainLayout"
+import Header from "../../components/layout/NavHeader";
+import Footer from "../../components/layout/Footer";
 import { useParams } from "react-router-dom";
 
 function ProductView(props) {
-  const [product, setProduct] = React.useState(null);
+  const [product, setProduct] = React.useState({});
+  const [offer, setOffer] = React.useState({});
   const { id } = useParams();
-  console.log(id)
 
   useEffect(() => {
     getProduct(id)
@@ -16,11 +18,20 @@ function ProductView(props) {
       .catch((error) => {
         console.error(`Ha ocurrido un error: ${JSON.stringify(error)}`);
       });
+    getOffer(id)
+      .then((response) => {
+        setOffer(response);
+      })
+      .catch((error) => {
+        console.error(`Ha ocurrido un error: ${JSON.stringify(error)}`);
+      });
   }, [props]);
 
   return (
     <>
-      <MainLayout product={product}/>
+      <Header/>
+      <MainLayout productResponse={product} offerResponse={offer}/>
+      <Footer/>
     </>
   )
 }

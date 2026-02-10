@@ -1,0 +1,13 @@
+[
+    {
+        "status": "active",
+        "seller": {
+            "id": "S001",
+            "name": "DISCORODANTE",
+            "sales": "+1000 ventas",
+            "products": "1000",
+            "isMercadoLider": true,
+            "rating": 4.8
+        }
+    }
+]

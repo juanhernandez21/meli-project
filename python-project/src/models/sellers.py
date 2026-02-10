@@ -9,26 +9,26 @@ base_path = Path(__file__).parent / "data/"
 
 # ---------- MODELOS ----------
 
-class productStatus(str, Enum):
+class sellerStatus(str, Enum):
   """An product status."""
 
   active = "active"
   inactive = "inactive"
 
 
-class products(BaseModel):
-	"""products models"""
+class sellers(BaseModel):
+	"""sellers models"""
 
-	status: productStatus = Field(..., example="active")
-	product: Dict[str, Any] = Field(..., example={"id": "123", "descripction":"mouse"})
+	status: sellerStatus = Field(..., example="active")
+	seller: Dict[str, Any] = Field(..., example={"id": "123", "sales": 100,})
 
 # ---------- HELPERS ----------
 
-class productsHelpers():
+class sellersHelpers():
 
-	def read_products(self):
-		"""Read products from the JSON file."""
-		json_file = base_path / "products.json"
+	def read_sellers(self):
+		"""Read sellers from the JSON file."""
+		json_file = base_path / "sellers.json"
 		if not json_file.exists():
 			return []
 		with open(json_file, "r", encoding="utf-8") as f:

@@ -1,0 +1,31 @@
+[
+    {
+        "status": "active",
+        "offer": {
+            "id": "OFF_MLC123",
+            "product_id": "MLC123",
+            "price": 42800,
+            "currency": "CLP",
+            "stock": 1,
+            "sales": "+500 vendidos",
+            "seller": {
+                "id": "S001",
+                "name": "DISCORODANTE",
+                "isMercadoLider": true,
+                "sales": "1001"
+            },
+            "payment": {
+                "installments": "6 cuotas de $7.133 sin interés",
+                "paymentMethods": [
+                    "mercado_pago",
+                    "credit_card",
+                    "debit_card"
+                ]
+            },
+            "shipping": {
+                "cost": 0,
+                "days": 0
+            }
+        }
+    }
+]
