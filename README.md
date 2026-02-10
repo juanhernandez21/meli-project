@@ -4,6 +4,12 @@
 
 ### Ejecutar docker-compose
 
+Carpeta de instalación:
+
+```bash
+cd /docker-install
+```
+
 Instalar y levantar contenedores:
 
 ```bash
@@ -14,8 +20,24 @@ Bajar contenedores:
 ```bash
 docker-compose down
 ```
+### Ejecutar desde el navegador
 
-Interactuar con python-project API:
+Interactuar con WEB:
 ```bash
-docker exec -it python-project-local bash
+http://localhost:3000/MLC123
+```
+
+Interactuar con Servicio Productos:
+```bash
+http://localhost:8000/api/v1/products/MLC123
+```
+
+Interactuar con Servicio Ofertas:
+```bash
+http://localhost:8000/api/v1/products/MLC123/offers
+```
+
+Interactuar con Servicio Vendedores:
+```bash
+http://localhost:8000/api/v1/sellers/S001
 ```
